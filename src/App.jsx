@@ -31,14 +31,14 @@ import {
   SiFlutter
 } from 'react-icons/si'
 
-import picImg from './assets/pic.png'
-import pictImg from './assets/pict.png'
-import heroProfileImg from './assets/Untitled design (2).png'
-import uniletImg from './projects/uniletimg.jpeg'
-import motosImg from './projects/motosimg.jpeg'
-import leoImg from './projects/Leoimg.jpeg'
-import huntingImg from './projects/huntingimg.jpeg'
-import familyImg from './projects/familyimg.jpeg'
+import picImg from './assets/pic.webp'
+import pictImg from './assets/pict.webp'
+import heroProfileImg from './assets/Untitled design (2).webp'
+import uniletImg from './assets/uniletimg.webp'
+import motosImg from './assets/motosimg.webp'
+import leoImg from './assets/Leoimg.webp'
+import huntingImg from './assets/huntingimg.webp'
+import familyImg from './assets/familyimg.webp'
 
 function App() {
   const [activeSection, setActiveSection] = useState('hero')
