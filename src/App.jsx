@@ -293,10 +293,15 @@ function App() {
   // Scroll target handler
   const scrollTo = (ref) => {
     setMobileMenuOpen(false)
-    window.scrollTo({
-      top: ref.current.offsetTop - 80,
-      behavior: 'smooth'
-    })
+    if (ref && ref.current) {
+      const targetTop = ref.current.getBoundingClientRect().top + window.scrollY - 80
+      setTimeout(() => {
+        window.scrollTo({
+          top: targetTop,
+          behavior: 'smooth'
+        })
+      }, 100)
+    }
   }
 
   // Filter skills
